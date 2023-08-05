@@ -6,7 +6,7 @@ const projectID = "54d0dd34-ba12-4de2-aa8b-61ea06d593dc"
 
 const LoginForm = () =>{
 
-    const [username, setUserName] = useState('')
+    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError]=useState('')
 
@@ -34,7 +34,7 @@ const LoginForm = () =>{
             <div className="form">
                 <h1 className="title">Chat Application</h1>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" value={username} onChange={ (e)=> setUserName(e.target.value)} className="input" placeholder="Username" required/>
+                    <input type="text" value={username} onChange={ (e)=> setUsername(e.target.value)} className="input" placeholder="Username" required/>
                     <input type="password" value={password} onChange={ (e)=> setPassword(e.target.value)} className="input" placeholder="Password" required/>
                     <div align="center">
                         <button className="button">
