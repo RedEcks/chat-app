@@ -36,7 +36,7 @@ const formattedconversations= conversations.map((conversation,index)=>{
 
     const value = {
         conversations: formattedconversations,
-        selectedConversationIndex: formattedconversations[selectedConversationIndex],
+        selectedConversationIndex,//: formattedconversations[selectedConversationIndex],
         selectConversationIndex: setselectedConversationIndex,
         createConversation
     }
